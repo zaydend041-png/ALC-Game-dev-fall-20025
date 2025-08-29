@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class playercontroller : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
     public float speed;
     public float rotspeed;
