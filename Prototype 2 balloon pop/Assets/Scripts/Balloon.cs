@@ -4,7 +4,7 @@ public class Balloon : MonoBehaviour
 {
     public int clickToPop = 3; //How many clicks before balloon pops
 
-    Public float scaleToIncrease = 0.10f; //Scale increased each time the balloon is clicked
+    public float scaleToIncrease = 0.10f; //Scale increased each time the balloon is clicked
 
     public int scoreToGive; // Score given for the popped balloon
 
@@ -16,8 +16,8 @@ public class Balloon : MonoBehaviour
 
     void Start()
     {
-        // Reference ScoreManager Component*
-        //scoreManager = GameObject.Find("ScoreManager").GetComponent<ScoreManager>();
+        //Reference ScoreManager Component*
+        scoreManager = GameObject.Find("ScoreManager").GetComponent<ScoreManager>();
     }
 
     void OnmouseDown()
@@ -27,11 +27,11 @@ public class Balloon : MonoBehaviour
         //Increase balloon size
         transform.localScale += Vector3.one * scaleToIncrease;
 
-        if(clickToPop ==0)
+        if(clickToPop == 0)
         {
-            //scoreManager.IncreaseScoreText(scoreToGive); // Increase Score*
-            //Instantiate(popEffect, transform.position, transform.rotation); // Instantiate Particle Effect - POP Effect*
-            Destroy(gameObject)
+            scoreManager.IncreaseScoreText(scoreToGive); // Increase Score*
+            Instantiate(popEffect, transform.position, transform.rotation); // Instantiate Particle Effect - POP Effect*
+            Destroy(gameObject);
         }
     }
 
