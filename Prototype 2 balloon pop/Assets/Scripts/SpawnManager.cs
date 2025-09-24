@@ -1,8 +1,11 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+
+public class SpawnManager: MonoBehaviour
 {
-   public GameObject[] balloonPreFabs();
+   public GameObject[] balloonPreFabs;
    public float startDelay = 0.5f;
    public float spawnInterval = 1.5f;
    public float xRange = 10.0f;

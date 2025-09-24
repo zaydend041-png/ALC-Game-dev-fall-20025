@@ -11,7 +11,7 @@ public class FloatUp : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        scoremanager = GameObject.find("ScoreManager").GetComponent<ScoreManager>();
+        scoreManager = GameObject.Find("ScoreManager").GetComponent<ScoreManager>();
         balloon = GetComponent<Balloon>();
     }
 

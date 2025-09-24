@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 1982802305687457277}
   - component: {fileID: 4918046288042364017}
   - component: {fileID: 8803813702473038647}
+  - component: {fileID: 6513442078677808113}
+  - component: {fileID: -6066317997558733448}
   m_Layer: 0
   m_Name: Balloon_Green
   m_TagString: Untagged
@@ -86,6 +88,38 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &6513442078677808113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754666206631676920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53bba0cb6aa7c0544acaab538c898e23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickToPop: 3
+  scaleToIncrease: 0.1
+  scoreToGive: 0
+  popEffect: {fileID: 0}
+--- !u!114 &-6066317997558733448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754666206631676920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41c068ae6a5501c4e8df6394494c47ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  upperBound: 15
+  scoreManager: {fileID: 0}
+  balloon: {fileID: 0}
 --- !u!1 &3697477934937654408
 GameObject:
   m_ObjectHideFlags: 0
