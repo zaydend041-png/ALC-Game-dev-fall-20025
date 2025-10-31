@@ -1,17 +1,18 @@
 using System.Collections;
-using System.Collecitons.Generic;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
-public class Menu : MonoBehavior
+public class Menu : MonoBehaviour
 {
-    public void OnPlayButton()
-    {
-        SceneManager.LoadScene(1);
-    }
-
-    public void OnQuitButton()
-    {
-        Application.Quit();
-    }
+// Called when we click the "Play" button.
+public void OnPlayButton ()
+{
+SceneManager.LoadScene(1);
 }
+// Called when we click the "Quit" button.
+public void OnQuitButton ()
+{
+Application.Quit();
+}
+}
+
