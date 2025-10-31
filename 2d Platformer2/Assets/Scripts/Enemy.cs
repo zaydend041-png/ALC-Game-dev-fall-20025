@@ -40,7 +40,7 @@ private void OnTriggerEnter2D (Collider2D collision)
 if(collision.CompareTag("Player"))
 {
 // Trigger the game over state on the player.
-collision.GetComponent<PlayerController>().GameOver();
+collision.GetComponent<PlayerController2D>().GameOver();
 }
 }
 }
