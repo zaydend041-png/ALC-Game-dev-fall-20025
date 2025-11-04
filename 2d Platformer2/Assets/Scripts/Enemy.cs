@@ -36,11 +36,9 @@ targetPos = startPos;
 }
 private void OnTriggerEnter2D (Collider2D collision)
 {
-// Did the player hit us?
-if(collision.CompareTag("Player"))
+if (collision.CompareTag("Player"))
 {
-// Trigger the game over state on the player.
-collision.GetComponent<PlayerController2D>().GameOver();
+    collision.GetComponent<PlayerController2D>().GameOver();
 }
 }
 }
